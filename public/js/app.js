@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
         messageOne.textContent = data.error
       } else {
         messageOne.textContent = data.location
-        messageTwo.textContent = `The current condition is ${data.forecast.condition}. It is currently ${data.forecast.actualTemp} degrees out. It feels like ${data.forecast.feelsLike} degrees.`
+        messageTwo.textContent = `The current condition is ${data.forecast.condition}. It is currently ${data.forecast.actualTemp} degrees out, and feels like ${data.forecast.feelsLike} degrees. The humidity is ${data.forecast.humidity}%.`
       }
     })
   })
